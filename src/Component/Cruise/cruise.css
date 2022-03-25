@@ -1,0 +1,29 @@
+.grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 20px;
+}
+ p{
+  overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 4;
+   -webkit-box-orient: vertical;;
+}
+.imgborder{
+border-radius: 10px 10px 0px 0px;
+}
+.imgborder2{
+    border-radius: 0px 0px 5px 5px;
+}
+.cur-card-bg{
+    background: rgb(240, 240, 240);
+    overflow:hidden;
+}
+
+.bg-darkBlue{
+    background: darkblue;
+}
+.c-darkBlue{
+    color: rgb(9, 164, 216);
+}

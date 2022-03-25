@@ -1,0 +1,32 @@
+.ml {
+    margin-left: auto !important;
+}
+
+.text-orange {
+    color: orange;
+}
+
+.text-darkBlue {
+    color: darkblue;
+}
+
+.bg-gray {
+    background: rgb(100, 97, 97);
+}
+
+.hv:hover {
+    background: rgb(87, 60, 10);
+    border-radius: 10px;
+    border: none;
+
+}
+
+.navimg {
+    height: 43px;
+    border-radius: 40px;
+}
+
+.orderimg{
+    height: 70px;
+    border-radius: 40px;
+}

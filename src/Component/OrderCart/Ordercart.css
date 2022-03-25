@@ -1,0 +1,16 @@
+.italic{
+  font-style: italic;
+}
+.order-bg{
+  background:rgb(221, 221, 221);
+  box-shadow: 0px 0px 7px 1px rgb(221, 221, 221);
+  min-height: 70vh;
+}
+.or-btn {
+  background: rgb(19, 181, 235);
+  border-radius: 30px;
+  color: white;
+}
+.border-order{
+  border-bottom: 1px solid green;
+}

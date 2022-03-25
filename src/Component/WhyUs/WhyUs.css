@@ -1,0 +1,38 @@
+.bgwyus {
+    background: rgb(226, 242, 245);
+}
+
+.sideImg {
+    border-radius: 30px;
+    overflow: hidden;
+    height: 60%;
+}
+
+hr.new4 {
+    border: 3px solid rgb(255, 0, 43);
+    background: rgb(138, 6, 28);
+    width: 230px;
+}
+.new4{
+       color: rgb(219, 110, 128);
+}
+
+.rotated {
+    transform: rotate(90deg);
+    /* Equal to rotateZ(45deg) */
+    color: rgb(219, 110, 128);
+    font-size: 60px;
+}
+
+.text-darkBlue {
+    color: rgb(9, 100, 173);
+}
+.text-darkBlue button{
+    background: rgb(9, 100, 173);
+    color: white;
+}
+
+.wus-header {
+    padding-top: 85px;
+    padding-bottom: 40px;
+}

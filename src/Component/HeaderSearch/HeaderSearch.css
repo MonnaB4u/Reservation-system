@@ -1,0 +1,38 @@
+.box-top {
+    margin: -100px;
+    border-radius: 10px;
+}
+
+.btn-style {
+
+    background: none;
+    border: 2px solid rgb(82, 180, 212);
+}
+
+.btn-middle:hover {
+    background: rgb(37, 174, 219);
+    color: white;
+}
+
+.btn-style:hover {
+    background: rgb(37, 174, 219);
+    color: white;
+}
+
+.btn-middle {
+    background: none;
+    border: none;
+    border-top: 2px solid rgb(82, 180, 212);
+    border-bottom: 2px solid rgb(82, 180, 212);
+
+}
+
+.width {
+    width: 90%;
+}
+
+.open-style {
+    transition: all 0.9s;
+    background: rgb(81, 185, 219);
+    color: white;
+}

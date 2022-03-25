@@ -1,0 +1,15 @@
+.contact-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(https://i.ibb.co/6FKcHB4/banner-1.jpg) center center / cover no-repeat;
+    min-height: 90vh;
+}
+.contact-img{
+    border-radius: 20px;
+}
+.text-lightblue{
+    color: rgb(22, 149, 192);
+}
+.btn-lightblue{
+    background: rgb(22, 149, 192);
+    border-radius: 40px;
+}
+

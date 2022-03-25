@@ -1,0 +1,6 @@
+.rotated2 {
+
+    /* Equal to rotateZ(45deg) */
+    color: rgb(219, 110, 128);
+    font-size: 60px;
+}

@@ -1,0 +1,40 @@
+.service-img {
+    border-radius: 20px;
+    width: 330px;
+}
+
+.service-img {
+    height: 300px;
+    overflow: hidden;
+}
+
+
+.img-hover-zoom {
+  height: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+    transition: transform .5s ease;
+
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+    transform: scale(1.5);
+}
+
+
+
+
+.service-btn {
+    background: rgb(1, 132, 141);
+    width: 40%;
+    height: 16%;
+    border-radius: 20px;
+    border: none;
+    color: white
+}

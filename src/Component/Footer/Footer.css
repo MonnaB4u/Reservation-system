@@ -1,0 +1,19 @@
+.footer-bg {
+    background: rgb(70, 70, 70);
+    min-height: 40vh;
+}
+
+.i {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 12px;
+    color: rgb(131, 224, 255);
+}
+
+.inborder {
+    border: 1px solid rgb(38, 166, 212);
+}
+
+.ff-btn {
+    background: rgb(38, 166, 212);
+}

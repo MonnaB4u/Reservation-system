@@ -1,0 +1,16 @@
+.reco-bg {
+    background: white;
+}
+/* .recosha{
+      box-shadow: 0px 1px 5px 0px gray;
+      border-radius:20px
+} */
+.recoImg{
+    border-radius:10px 10px 0px 0px;
+    box-shadow: 0px 0px 6px 0px gray;
+    }
+
+.recoCard{
+    border-radius:0px 0px 10px 10px;
+    box-shadow: 0px 4px 5px 0px gray;
+}
