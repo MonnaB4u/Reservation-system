@@ -11,9 +11,9 @@ const OrderCart = () => {
     const { id } = useParams()
     const [loggedInUser, setLoggedInUsers] = useContext(UserContext);
     useEffect(() => {
-        const url = `http://localhost:5000/CruisesCollection/${id}`
-        const url2 = `http://localhost:5000/HotelCollection/${id}`
-        const url3 = `http://localhost:5000/AllHotelCollection/${id}`
+        const url = `https://hidden-cove-26759.herokuapp.com/CruisesCollection/${id}`
+        const url2 = `https://hidden-cove-26759.herokuapp.com/HotelCollection/${id}`
+        const url3 = `https://hidden-cove-26759.herokuapp.com/AllHotelCollection/${id}`
 
         fetch(url)
             .then(res => res.json())
@@ -39,7 +39,7 @@ const OrderCart = () => {
         newData.status = "pending";
         delete newData._id;
 
-        fetch('http://localhost:5000/addOrder', {
+        fetch('https://hidden-cove-26759.herokuapp.com/addOrder', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newData)
@@ -95,7 +95,7 @@ const OrderCart = () => {
 
                                     <div className="d-flex flex-column">
                                         <label className='text-start mx-4 h6' htmlFor="">Name</label>
-                                        <input className=' input-style px-3 py-2 new4' value={loggedInUser.name || ''} type="text" {...register("name")} required />
+                                        <input className=' input-style px-3 py-2 new4' value={loggedInUser.name} type="text" {...register("name")} required />
                                     </div>
 
                                     <div className="d-flex flex-column">

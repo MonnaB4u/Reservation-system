@@ -13,6 +13,7 @@ import MyOrder from './Component/myOrder/MyOrder';
 import AdminManageOrder from './Component/AdminManageOrder/AdminManageOrder';
 import VisitAllHotel from './Component/VisitAllHotel/VisitAllHotel';
 import Cruises from './Component/Cruise/Cruises';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 
 export const UserContext = createContext();
@@ -36,12 +37,16 @@ function App() {
         <BrowserRouter>
           <Routes>
             < Route path='/' element={<Home></Home>} />
-            <Route path='/order/:id' element={<OrderCart />} />
-            <Route path='/myOrder' element={<MyOrder></MyOrder>} />
-            <Route path='/adminManageOrder' element={<AdminManageOrder></AdminManageOrder>} />
-            <Route path='/allHotel' element={<VisitAllHotel></VisitAllHotel>} />
-            <Route path='/allCruise' element={<Cruises />} />
+            <Route element={<PrivateRoute />}>
+              <Route path='/order/:id' element={<OrderCart />} />
+              <Route path='/myOrder' element={<MyOrder></MyOrder>} />
+              <Route path='/adminManageOrder' element={<AdminManageOrder></AdminManageOrder>} />
+              <Route path='/allHotel' element={<VisitAllHotel></VisitAllHotel>} />
+              <Route path='/allCruise' element={<Cruises />} />
+
+            </Route>
             <Route path='/login' element={<Login />} />
+
           </Routes>
         </BrowserRouter>
       </UserContext.Provider>

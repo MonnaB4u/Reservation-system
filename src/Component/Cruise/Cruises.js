@@ -13,7 +13,7 @@ const Cruises = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5000/CruisesCollection`
+        const url = `https://hidden-cove-26759.herokuapp.com/CruisesCollection`
         fetch(url)
             .then(res => res.json())
             .then(data => setData(data))

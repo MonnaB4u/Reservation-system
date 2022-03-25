@@ -49,10 +49,12 @@ const Login = () => {
         <div>
             <Navbar></Navbar>
             <div>
-                <div className=" m-5 col-sm pt-5">
+                <div className=" m-5 col-sm pt-5 text-center">
                     {/* <EmailPassLogin></EmailPassLogin> */}
+
                 </div>
-                <div className="col-sm text-center">
+                <div className="col-sm text-center pt-5">
+                                     <h1>Please Login First Before Book our services. Thank You :)</h1>
                     {
                         !loggedInusers.name ?
 

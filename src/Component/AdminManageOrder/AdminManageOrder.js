@@ -6,7 +6,7 @@ const AdminManageOrder = () => {
     const [data, setData] = useState([])
 
     useEffect(() => {
-        const url = 'http://localhost:5000/OrderCollection'
+        const url = 'https://hidden-cove-26759.herokuapp.com/OrderCollection'
         fetch(url)
             .then(res => res.json())
             .then(data => setData(data))
@@ -15,7 +15,7 @@ const AdminManageOrder = () => {
     const handleDeleteUser = id => {
         const proceed = window.confirm('Are you sure you want to delete')
         if (proceed) {
-            const url = `http://localhost:5000/OrderCollection/${id}`
+            const url = `https://hidden-cove-26759.herokuapp.com/OrderCollection/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
@@ -35,7 +35,7 @@ const AdminManageOrder = () => {
     const [user, setUser] = useState({ status: "approved" })
     const updateOrder = (id) => {
         console.log(user)
-        fetch(`http://localhost:5000/OrderCollection/${id}`,
+        fetch(`https://hidden-cove-26759.herokuapp.com/OrderCollection/${id}`,
             {
                 method: "PUT",
                 headers: {

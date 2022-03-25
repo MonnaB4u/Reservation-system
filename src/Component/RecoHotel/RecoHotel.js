@@ -9,7 +9,7 @@ const RecoHotel = () => {
     const navigate = useNavigate()
 
     useEffect(() => {
-        const url = `http://localhost:5000/HotelCollection`
+        const url = `https://hidden-cove-26759.herokuapp.com/HotelCollection`
         fetch(url)
             .then(res => res.json())
             .then(data => setData(data))

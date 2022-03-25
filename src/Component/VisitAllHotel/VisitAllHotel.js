@@ -7,15 +7,15 @@ import './vallho.css'
 
 const VisitAllHotel = () => {
 
-    const [data, setData] = useState(datas)
+    const [data, setData] = useState([])
 
     useEffect(() => {
-        const url = `http://localhost:5000/AllHotelCollection`
+        const url = `https://hidden-cove-26759.herokuapp.com/AllHotelCollection`
         fetch(url)
             .then(res => res.json())
             .then(data => setData(data))
     }, [])
-
+console.log(data)
     const navigate = useNavigate()
     return (
         <div className="">
