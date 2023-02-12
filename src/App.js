@@ -14,6 +14,9 @@ import AdminManageOrder from './Component/AdminManageOrder/AdminManageOrder';
 import VisitAllHotel from './Component/VisitAllHotel/VisitAllHotel';
 import Cruises from './Component/Cruise/Cruises';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
+import Admin from './Component/Admin/Admin';
+import AddHotel from './Component/Admin/AddHotel';
+import Addcruise from './Component/Admin/Addcruise';
 
 
 export const UserContext = createContext();
@@ -43,7 +46,9 @@ function App() {
               <Route path='/adminManageOrder' element={<AdminManageOrder></AdminManageOrder>} />
               <Route path='/allHotel' element={<VisitAllHotel></VisitAllHotel>} />
               <Route path='/allCruise' element={<Cruises />} />
-
+              <Route path='/admin' element={<Admin />} />
+              <Route path='/AddHotel' element={<AddHotel />} />
+              <Route path='/AddCruise' element={<Addcruise />} />
             </Route>
             <Route path='/login' element={<Login />} />
 

@@ -11,9 +11,9 @@ const OrderCart = () => {
     const { id } = useParams()
     const [loggedInUser, setLoggedInUsers] = useContext(UserContext);
     useEffect(() => {
-        const url = `https://hidden-cove-26759.herokuapp.com/CruisesCollection/${id}`
-        const url2 = `https://hidden-cove-26759.herokuapp.com/HotelCollection/${id}`
-        const url3 = `https://hidden-cove-26759.herokuapp.com/AllHotelCollection/${id}`
+        const url = `https://reservation-system-database.vercel.app/CruisesCollection/${id}`
+        const url2 = `https://reservation-system-database.vercel.app/HotelCollection/${id}`
+        const url3 = `https://reservation-system-database.vercel.app/AllHotelCollection/${id}`
 
         fetch(url)
             .then(res => res.json())
@@ -31,6 +31,7 @@ const OrderCart = () => {
 
     const { register, handleSubmit, errors } = useForm();
     const navigate = useNavigate()
+
     const onSubmit = data => {
         const newData = { ...cruise };
         newData.name = data.name;
@@ -39,7 +40,7 @@ const OrderCart = () => {
         newData.status = "pending";
         delete newData._id;
 
-        fetch('https://hidden-cove-26759.herokuapp.com/addOrder', {
+        fetch('https://reservation-system-database.vercel.app/addOrder', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newData)
@@ -108,13 +109,13 @@ const OrderCart = () => {
                                         <input className='input-style px-3 py-2' placeholder="please enter your address" {...register("address")} required type="text" />
                                     </div>
 
-                                    <button type="submit" className="btn or-btn w-100 my-2"><h5>Subscribe</h5></button>
+                                    <button type="submit" className="btn or-btn w-100 my-2"><h5>Booking</h5></button>
 
                                 </form>
 
                             </div>
                         </div>
-
+{/*  */}
                     </div>
                 </div>
             </div>

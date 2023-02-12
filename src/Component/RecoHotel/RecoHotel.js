@@ -9,7 +9,7 @@ const RecoHotel = () => {
     const navigate = useNavigate()
 
     useEffect(() => {
-        const url = `https://hidden-cove-26759.herokuapp.com/HotelCollection`
+        const url = `https://reservation-system-database.vercel.app/HotelCollection`
         fetch(url)
             .then(res => res.json())
             .then(data => setData(data))

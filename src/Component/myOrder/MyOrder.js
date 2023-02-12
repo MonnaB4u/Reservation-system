@@ -17,7 +17,7 @@ const MyOrder = () => {
     console.log(order)
 
     useEffect(() => {
-        const url = `https://hidden-cove-26759.herokuapp.com/OrderCollectionbyEmail?email=${loggedInUser.email}`
+        const url = `https://reservation-system-database.vercel.app/OrderCollectionbyEmail?email=${loggedInUser.email}`
         fetch(url)
             .then(res => res.json())
             .then(data => setOrder(data))
@@ -27,7 +27,7 @@ const MyOrder = () => {
     const handleDeleteUser = id => {
         const proceed = window.confirm('Are you sure you want to delete')
         if (proceed) {
-            const url = `https://hidden-cove-26759.herokuapp.com/OrderCollection/${id}`
+            const url = `https://reservation-system-database.vercel.app/OrderCollection/${id}`
             fetch(url, {
                 method: 'DELETE'
             })

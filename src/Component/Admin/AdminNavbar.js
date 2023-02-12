@@ -1,11 +1,8 @@
-import { Transition } from '@headlessui/react';
 import React, { useContext, useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import { UserContext } from '../../App';
-import './Nav.css'
-
-const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
+import '../Navbar/Nav.css'
+const AdminNavbar = () => {
+     const [isOpen, setIsOpen] = useState(false);
 
     const [loggedInUser, setLoggedInUsers] = useContext(UserContext);
 
@@ -13,7 +10,6 @@ const Navbar = () => {
         localStorage.removeItem("name");
         e.preventDefault();
     }
-
     return (
         <div className="w-full">
             <nav class="navbar navbar-expand-lg navbar-light bg-gray fixed-top">
@@ -27,11 +23,19 @@ const Navbar = () => {
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav ml mx-5" >
                             <a class="nav-link active h5 mx-3 text-white hv" aria-current="page" href="/">Home</a>
-                            <a class="nav-link h5 mx-3 text-white hv" href="/Admin">Admin</a>
                             {
                                 loggedInUser.name &&
-                                <a class="nav-link h5 mx-3 text-white hv" href="/myOrder">MyOrders</a>
+                                <a class="nav-link h5 mx-3 text-white hv" href="/AddHotel">AddHotel</a>
 
+                            }
+                             {
+                                loggedInUser.name &&
+                                <a class="nav-link h5 mx-3 text-white hv" href="/AddCruise">AddCruise</a>
+
+                            }
+                            {
+                                loggedInUser.name &&
+                                <a class="nav-link h5 mx-3 text-white hv" href="/adminManageOrder">Orders</a>
                             }
                             {
                                 loggedInUser.email ?
@@ -50,4 +54,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default AdminNavbar;

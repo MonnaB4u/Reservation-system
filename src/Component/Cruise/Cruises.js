@@ -13,7 +13,7 @@ const Cruises = () => {
 
 
     useEffect(() => {
-        const url = `https://hidden-cove-26759.herokuapp.com/CruisesCollection`
+        const url = `https://reservation-system-database.vercel.app/CruisesCollection`
         fetch(url)
             .then(res => res.json())
             .then(data => setData(data))
@@ -51,7 +51,7 @@ const Cruises = () => {
                                         <p className="text-lightBlue font-bold mx-3 c-darkBlue h6">${each.price}</p>
                                     </div>
                                     <div className="text-white mb-3 mt-2 d-flex text-center justify-content-between border">
-                                        <button className="bg-darkBlue text-white mx-3 border rounded-full btn" > See Details </button>
+                                        <button onClick={() => navigate(`/order/${each._id || each.id}`)} className="bg-darkBlue text-white mx-3 border rounded-full btn" > See Details </button>
                                         <button onClick={() => navigate(`/order/${each._id || each.id}`)} className="bg-orange text-white  mx-3 rounded-full btn" > Book  </button>
                                     </div>
                                 </div>
